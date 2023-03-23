@@ -8,8 +8,18 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+<style>
+    .narbar-inverse .narbar-nav > li > a {
+        color: white;
+    }
+
+    .narbar-inverse .narbar-brand {
+        color: white;
+    }
+
+</style>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #d41d50;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,6 +36,7 @@
                     <li>@Html.ActionLink("Course", "Create", "Courses")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
+                
             </div>
         </div>
     </div>
